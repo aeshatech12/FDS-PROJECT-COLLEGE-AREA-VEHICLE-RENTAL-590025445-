@@ -1,0 +1,241 @@
+Rental_ID,Rental_Date,Booking_Time,Student_Year,Vehicle_Type,Vehicle_Model,Pickup_Location,Drop_Location,Distance_km,Duration_min,Rental_Price_Rs,Payment_Mode,Weather,Traffic_Level,Rental_Purpose,Customer_Rating,Vehicle_Available_Count,Demand_Level,Fuel_Battery_Level,Expected_Duration_min,Recommended_Vehicle,Recommended_Route,Recommendation_Accepted,Cancellation_Status,Data_Source
+R001,07/01/2026,9:15 AM,2nd Year,Scooter,Activa 6G,UPES Bidholi,Pondha,3.2,12.0,95.0,UPI,Clear,Low,Shopping,4.5,8.0,Medium,82%,11.0,E-Scooter,Route 1,Yes,No,Original
+R002,07/01/2026,10:30 AM,1st Year,Bike,Splendor Plus,Bidholi,Nanda Ki Chowki,7.4,24.0,165.0,Cash,Clear,Medium,Personal,4.2,5.0,High,75%,22.0,Bike,Route 2,Yes,No,Original
+R003,07/02/2026,8:45 AM,3rd Year,Scooter,Jupiter,UPES Bidholi,Kandoli,2.1,9.0,75.0,UPI,Cloudy,Low,Hostel,4.8,9.0,Low,88%,8.0,Scooter,Route 1,Yes,No,Original
+R004,07/02/2026,11:20 AM,2nd Year,Bike,Pulsar 150,Pondha,UPES Bidholi,3.4,13.0,110.0,UPI,Clear,Low,College,4.6,7.0,Medium,72%,12.0,Bike,Route 1,Yes,No,Original
+R005,07/03/2026,5:30 PM,4th Year,Car,Alto K10,UPES Bidholi,Prem Nagar,7.1,25.0,290.0,Card,Rainy,High,Shopping,4.1,3.0,High,68%,28.0,Car,Route 2,Yes,No,Original
+R006,07/03/2026,1:10 PM,2nd Year,Scooter,Access 125,Bidholi,Sudhowala,6.2,22.0,150.0,UPI,Cloudy,Medium,Food,4.4,6.0,Medium,79%,20.0,Scooter,Route 1,Yes,No,Original
+R007,07/04/2026,9:00 AM,1st Year,Scooter,Activa 6G,UPES Bidholi,Bidholi,1.4,7.0,55.0,Cash,Clear,Low,Hostel,4.7,10.0,Low,90%,6.0,E-Scooter,Route 1,Yes,No,Original
+R008,07/04/2026,4:15 PM,3rd Year,Bike,Apache RTR,Kandoli,Prem Nagar,6.5,23.0,175.0,UPI,Clear,Medium,Shopping,4.3,5.0,Medium,74%,21.0,Bike,Route 2,Yes,No,Original
+R009,07/05/2026,12:00 PM,2nd Year,E-Scooter,Ola S1,UPES Bidholi,Pondha,3.0,11.0,85.0,UPI,Clear,Low,Food,4.9,8.0,Low,91%,10.0,E-Scooter,Route 1,Yes,No,Original
+R010,07/05/2026,6:00 PM,4th Year,Car,WagonR,Bidholi,Nanda Ki Chowki,7.3,26.0,310.0,Card,Rainy,High,Personal,3.9,2.0,High,65%,29.0,Car,Route 2,No,No,Original
+R011,07/06/2026,3:30 PM,2nd Year,Bike,Classic 350,UPES Bidholi,Sudhowala,6.0,21.0,185.0,Cash,Cloudy,Medium,Shopping,4.0,4.0,High,71%,20.0,Bike,Route 1,Yes,No,Original
+R012,07/06/2026,8:30 AM,1st Year,Scooter,Jupiter,Pondha,Bidholi,2.8,10.0,80.0,UPI,Clear,Low,College,4.6,9.0,Low,86%,9.0,Scooter,Route 1,Yes,No,Original
+R013,07/07/2026,1:45 PM,3rd Year,Bike,Splendor Plus,UPES Bidholi,Prem Nagar,7.0,24.0,160.0,UPI,Clear,Medium,Food,4.5,6.0,Medium,77%,22.0,Bike,Route 2,Yes,No,Original
+R014,07/07/2026,10:15 AM,2nd Year,Scooter,Activa 6G,Kandoli,UPES Bidholi,2.0,8.0,70.0,Cash,Clear,Low,College,4.8,10.0,Low,89%,7.0,E-Scooter,Route 1,Yes,No,Original
+R015,07/08/2026,5:45 PM,4th Year,Car,Swift,UPES Bidholi,Nanda Ki Chowki,7.6,27.0,330.0,UPI,Rainy,High,Shopping,4.1,2.0,High,63%,30.0,Car,Route 2,Yes,No,Original
+R016,07/08/2026,11:00 AM,2nd Year,Bike,Pulsar 150,Bidholi,Pondha,2.7,11.0,90.0,Cash,Cloudy,Low,Personal,4.4,7.0,Medium,81%,10.0,Bike,Route 1,Yes,No,Original
+R017,07/09/2026,9:40 AM,1st Year,E-Scooter,Ather 450X,UPES Bidholi,Kandoli,2.3,9.0,75.0,UPI,Clear,Low,Hostel,4.9,8.0,Low,94%,8.0,E-Scooter,Route 1,Yes,No,Original
+R018,07/09/2026,2:20 PM,3rd Year,Scooter,Access 125,Pondha,Sudhowala,4.5,17.0,120.0,UPI,Rainy,Medium,Food,4.2,5.0,Medium,76%,18.0,Scooter,Route 2,Yes,No,Original
+R019,07/10/2026,8:50 AM,2nd Year,Bike,Apache RTR,UPES Bidholi,Bidholi,1.5,7.0,60.0,Cash,Clear,Low,Hostel,4.7,9.0,Low,85%,6.0,E-Scooter,Route 1,Yes,No,Original
+R020,07/10/2026,4:30 PM,4th Year,Car,Baleno,UPES Bidholi,Prem Nagar,7.2,25.0,320.0,Card,Clear,Medium,Shopping,4.3,3.0,High,69%,23.0,Car,Route 2,Yes,No,Original
+R021,07/11/2026,10:00 AM,2nd Year,Scooter,Jupiter,Bidholi,Kandoli,2.4,10.0,80.0,UPI,Cloudy,Low,College,4.5,8.0,Low,87%,9.0,Scooter,Route 1,Yes,No,Original
+R022,07/11/2026,12:40 PM,1st Year,Bike,Splendor Plus,UPES Bidholi,Pondha,3.1,12.0,95.0,Cash,Clear,Low,Food,4.6,7.0,Medium,83%,11.0,Bike,Route 1,Yes,No,Original
+R023,07/12/2026,5:20 PM,3rd Year,Scooter,Activa 6G,Sudhowala,UPES Bidholi,6.1,22.0,145.0,UPI,Rainy,High,College,4.0,3.0,High,70%,25.0,Scooter,Route 2,No,No,Original
+R024,07/12/2026,3:10 PM,2nd Year,Bike,Classic 350,UPES Bidholi,Nanda Ki Chowki,7.5,25.0,190.0,UPI,Clear,Medium,Personal,4.4,5.0,Medium,73%,23.0,Bike,Route 2,Yes,No,Original
+R025,13-07-2026,2:00 PM,4th Year,Car,Alto K10,Pondha,Prem Nagar,4.3,17.0,220.0,Cash,Cloudy,Medium,Shopping,4.1,4.0,Medium,72%,16.0,Car,Route 1,Yes,No,Original
+R026,13-07-2026,9:25 AM,2nd Year,Scooter,Access 125,UPES Bidholi,Kandoli,2.2,9.0,70.0,UPI,Clear,Low,Hostel,4.8,9.0,Low,92%,8.0,E-Scooter,Route 1,Yes,No,Original
+R027,14-07-2026,11:30 AM,1st Year,E-Scooter,Ola S1,Bidholi,Pondha,2.9,11.0,85.0,UPI,Clear,Low,Food,4.7,8.0,Low,89%,10.0,E-Scooter,Route 1,Yes,No,Original
+R028,14-07-2026,6:10 PM,3rd Year,Bike,Pulsar 150,UPES Bidholi,Sudhowala,6.3,22.0,160.0,Cash,Rainy,High,Shopping,3.8,2.0,High,66%,26.0,Bike,Route 2,No,No,Original
+R029,15-07-2026,1:20 PM,2nd Year,Scooter,Jupiter,Nanda Ki Chowki,UPES Bidholi,7.4,24.0,170.0,UPI,Cloudy,Medium,College,4.3,5.0,Medium,74%,22.0,Scooter,Route 2,Yes,No,Original
+R030,15-07-2026,4:00 PM,4th Year,Car,Swift,UPES Bidholi,Prem Nagar,7.0,23.0,310.0,Card,Clear,Medium,Personal,4.5,4.0,Medium,70%,22.0,Car,Route 2,Yes,No,Original
+R031,16-07-2026,10:10 AM,2nd Year,Bike,Splendor Plus,Kandoli,Pondha,2.6,10.0,85.0,Cash,Clear,Low,Food,4.6,8.0,Low,84%,9.0,Bike,Route 1,Yes,No,Original
+R032,16-07-2026,8:20 AM,1st Year,Scooter,Activa 6G,UPES Bidholi,Bidholi,1.3,6.0,50.0,UPI,Clear,Low,Hostel,4.9,10.0,Low,95%,6.0,E-Scooter,Route 1,Yes,No,Original
+R033,17-07-2026,5:50 PM,3rd Year,Bike,Apache RTR,Bidholi,Prem Nagar,6.8,23.0,175.0,UPI,Rainy,High,Shopping,4.0,3.0,High,67%,26.0,Bike,Route 2,Yes,No,Original
+R034,17-07-2026,11:40 AM,2nd Year,Scooter,Access 125,Pondha,UPES Bidholi,3.3,12.0,95.0,Cash,Cloudy,Low,College,4.5,7.0,Medium,80%,11.0,Scooter,Route 1,Yes,No,Original
+R035,18-07-2026,3:40 PM,4th Year,Car,WagonR,UPES Bidholi,Sudhowala,6.0,21.0,280.0,UPI,Clear,Medium,Shopping,4.2,4.0,Medium,69%,20.0,Car,Route 1,Yes,No,Original
+R036,18-07-2026,12:15 PM,2nd Year,E-Scooter,Ather 450X,UPES Bidholi,Pondha,3.1,11.0,90.0,UPI,Clear,Low,Food,4.8,9.0,Low,93%,10.0,E-Scooter,Route 1,Yes,No,Original
+R037,19-07-2026,2:30 PM,1st Year,Bike,Pulsar 150,Bidholi,Kandoli,2.2,9.0,75.0,Cash,Rainy,Medium,Hostel,4.1,5.0,Medium,76%,10.0,Bike,Route 1,Yes,No,Original
+R038,19-07-2026,4:45 PM,3rd Year,Scooter,Jupiter,UPES Bidholi,Nanda Ki Chowki,7.5,25.0,165.0,UPI,Clear,Medium,Shopping,4.4,5.0,Medium,73%,23.0,Scooter,Route 2,Yes,No,Original
+R039,20-07-2026,1:50 PM,2nd Year,Bike,Classic 350,Prem Nagar,UPES Bidholi,7.1,24.0,185.0,UPI,Cloudy,Medium,College,4.3,5.0,Medium,75%,23.0,Bike,Route 2,Yes,No,Original
+R040,20-07-2026,10:50 AM,4th Year,Car,Baleno,UPES Bidholi,Pondha,3.2,12.0,190.0,Card,Clear,Low,Personal,4.7,6.0,Low,78%,11.0,Car,Route 1,Yes,No,Original
+R041,21-07-2026,6:20 PM,2nd Year,Scooter,Activa 6G,Sudhowala,Bidholi,5.8,20.0,140.0,Cash,Rainy,High,Food,3.9,2.0,High,68%,24.0,Scooter,Route 2,No,No,Original
+R042,21-07-2026,9:10 AM,1st Year,Bike,Splendor Plus,UPES Bidholi,Kandoli,2.3,9.0,75.0,UPI,Clear,Low,Hostel,4.8,9.0,Low,90%,8.0,E-Scooter,Route 1,Yes,No,Original
+R043,22-07-2026,2:45 PM,3rd Year,Scooter,Access 125,Pondha,Nanda Ki Chowki,5.2,18.0,130.0,UPI,Cloudy,Medium,Shopping,4.2,5.0,Medium,77%,17.0,Scooter,Route 2,Yes,No,Original
+R044,22-07-2026,12:30 PM,2nd Year,Bike,Apache RTR,UPES Bidholi,Prem Nagar,7.2,24.0,180.0,Cash,Clear,Medium,Food,4.5,5.0,Medium,74%,22.0,Bike,Route 2,Yes,No,Original
+R045,23-07-2026,5:10 PM,4th Year,Car,Swift,Bidholi,Sudhowala,6.1,22.0,285.0,Card,Rainy,High,Personal,4.0,2.0,High,64%,25.0,Car,Route 2,Yes,No,Original
+R046,23-07-2026,11:15 AM,2nd Year,E-Scooter,Ola S1,UPES Bidholi,Pondha,3.0,11.0,85.0,UPI,Clear,Low,Food,4.9,8.0,Low,92%,10.0,E-Scooter,Route 1,Yes,No,Original
+R047,24-07-2026,9:35 AM,1st Year,Scooter,Jupiter,Kandoli,UPES Bidholi,2.1,8.0,70.0,Cash,Clear,Low,College,4.7,9.0,Low,88%,8.0,Scooter,Route 1,Yes,No,Original
+R048,24-07-2026,3:20 PM,3rd Year,Bike,Pulsar 150,Nanda Ki Chowki,UPES Bidholi,7.6,26.0,180.0,UPI,Cloudy,Medium,College,4.3,4.0,Medium,72%,24.0,Bike,Route 2,Yes,No,Original
+R049,25-07-2026,8:40 AM,2nd Year,Scooter,Activa 6G,UPES Bidholi,Bidholi,1.4,7.0,55.0,UPI,Clear,Low,Hostel,4.8,10.0,Low,94%,6.0,E-Scooter,Route 1,Yes,No,Original
+R050,25-07-2026,6:00 PM,4th Year,Car,Alto K10,UPES Bidholi,Prem Nagar,7.1,25.0,300.0,Cash,Rainy,High,Shopping,4.1,2.0,High,65%,28.0,Car,Route 2,No,No,Original
+R051,26-07-2026,10:30 AM,2nd Year,Bike,Apache RTR,Pondha,Kandoli,2.5,10.0,90.0,UPI,Clear,Low,Food,4.6,8.0,Low,86%,9.0,Bike,Route 1,Yes,No,Original
+R052,26-07-2026,9:50 AM,1st Year,Scooter,Activa 6G,UPES Bidholi,Pondha,3.3,12.0,95.0,UPI,Cloudy,Low,Hostel,4.8,9.0,Low,89%,11.0,Scooter,Route 1,Yes,No,Original
+R053,27-07-2026,5:40 PM,3rd Year,Car,WagonR,Bidholi,Prem Nagar,6.7,23.0,285.0,Card,Rainy,High,Shopping,4.0,2.0,High,66%,27.0,Car,Route 2,Yes,No,Original
+R054,27-07-2026,1:30 PM,2nd Year,Bike,Splendor Plus,UPES Bidholi,Sudhowala,6.2,21.0,150.0,Cash,Clear,Medium,Personal,4.4,5.0,Medium,78%,20.0,Bike,Route 1,Yes,No,Original
+R055,28-07-2026,10:20 AM,4th Year,Scooter,Jupiter,Kandoli,Bidholi,2.1,9.0,75.0,UPI,Clear,Low,College,4.7,8.0,Low,87%,8.0,Scooter,Route 1,Yes,No,Original
+R056,28-07-2026,12:10 PM,2nd Year,E-Scooter,Ather 450X,UPES Bidholi,Pondha,3.2,11.0,90.0,UPI,Cloudy,Low,Food,4.9,9.0,Low,91%,10.0,E-Scooter,Route 1,Yes,No,Original
+R057,29-07-2026,2:15 PM,1st Year,Bike,Pulsar 150,Pondha,UPES Bidholi,3.4,13.0,105.0,Cash,Rainy,Medium,College,4.3,5.0,Medium,77%,14.0,Bike,Route 2,Yes,No,Original
+R058,29-07-2026,9:20 AM,3rd Year,Scooter,Access 125,UPES Bidholi,Kandoli,2.2,9.0,70.0,UPI,Clear,Low,Hostel,4.8,9.0,Low,90%,8.0,E-Scooter,Route 1,Yes,No,Original
+R059,30-07-2026,3:50 PM,2nd Year,Car,Baleno,UPES Bidholi,Sudhowala,6.1,22.0,290.0,Card,Cloudy,Medium,Shopping,4.2,4.0,Medium,70%,21.0,Car,Route 1,Yes,No,Original
+R060,30-07-2026,4:25 PM,4th Year,Bike,Classic 350,Bidholi,Prem Nagar,6.9,24.0,180.0,UPI,Clear,Medium,Personal,4.5,5.0,Medium,76%,22.0,Bike,Route 2,Yes,No,Original
+R061,22-07-2026,5:25 PM,2nd Year,Scooter,Activa 6G,Nanda Ki Chowki,Nanda Ki Chowki,7.5,23.0,165.0,Cash,Cloudy,Medium,Shopping,4.1,8.0,Medium,78%,21.0,Car,Route 1,No,No,Synthetic
+R062,31-07-2026,7:25 AM,4th Year,Scooter,Jupiter,Nanda Ki Chowki,Sudhowala,7.0,23.0,120.0,Card,Clear,Medium,Hostel,3.9,8.0,Medium,62%,20.0,Car,Route 1,Yes,No,Synthetic
+R063,23-07-2026,9:45 AM,4th Year,Car,Alto K10,Bidholi,UPES Bidholi,6.2,15.0,320.0,Card,Cloudy,Low,Food,3.8,10.0,Low,63%,14.0,Scooter,Route 1,Yes,No,Synthetic
+R064,04-07-2026,6:55 PM,2nd Year,Scooter,Access 125,Bidholi,Nanda Ki Chowki,2.9,11.0,95.0,UPI,Clear,Medium,Personal,4.4,11.0,High,67%,8.0,Bike,Route 2,Yes,No,Synthetic
+R065,01-07-2026,5:10 PM,3rd Year,Bike,Splendor Plus,Kandoli,Nanda Ki Chowki,14.6,42.0,320.0,Cash,Cloudy,Medium,Hostel,4.5,9.0,Medium,97%,42.0,Scooter,Route 2,Yes,No,Synthetic
+R066,03-07-2026,6:15 PM,4th Year,E-Scooter,Ola S1,Kandoli,Sudhowala,10.8,28.0,165.0,UPI,Cloudy,Medium,Hostel,4.6,5.0,Low,82%,31.0,Scooter,Route 1,Yes,No,Synthetic
+R067,06-07-2026,2:00 PM,2nd Year,Bike,Pulsar 150,Sudhowala,Prem Nagar,5.8,19.0,135.0,UPI,Cloudy,Medium,Shopping,3.7,5.0,Low,76%,17.0,Car,Route 1,Yes,No,Synthetic
+R068,23-07-2026,12:00 PM,4th Year,Scooter,Access 125,Pondha,UPES Bidholi,2.4,9.0,80.0,Cash,Clear,Medium,Shopping,3.7,6.0,Medium,93%,7.0,Scooter,Route 1,Yes,No,Synthetic
+R069,20-07-2026,8:55 PM,2nd Year,Bike,Apache RTR,Prem Nagar,Prem Nagar,9.6,30.0,200.0,UPI,Clear,Medium,Food,3.9,8.0,Low,80%,27.0,Car,Route 1,Yes,No,Synthetic
+R070,24-07-2026,12:00 PM,2nd Year,E-Scooter,Ola S1,Pondha,Nanda Ki Chowki,6.4,20.0,120.0,UPI,Clear,Low,Food,4.0,12.0,Low,78%,14.0,E-Scooter,Route 2,Yes,No,Synthetic
+R071,09-07-2026,3:10 PM,4th Year,Scooter,Jupiter,Sudhowala,Prem Nagar,14.1,42.0,270.0,Cash,Cloudy,Medium,Hostel,,4.0,Medium,75%,40.0,Car,Route 1,Yes,No,Synthetic
+R072,10-07-2026,11:10 AM,3rd Year,Bike,Apache RTR,UPES Bidholi,Pondha,2.2,8.0,130.0,UPI,Clear,High,College,4.1,4.0,Medium,92%,9.0,Scooter,Route 1,Yes,No,Synthetic
+R073,31-07-2026,9:45 AM,4th Year,Bike,Apache RTR,Prem Nagar,Sudhowala,1.5,7.0,70.0,UPI,Clear,Medium,Personal,3.8,12.0,High,97%,4.0,E-Scooter,Route 1,Yes,No,Synthetic
+R074,05-07-2026,10:10 AM,2nd Year,E-Scooter,Ather 450X,Prem Nagar,UPES Bidholi,7.1,18.0,120.0,Card,Cloudy,Low,Shopping,4.4,11.0,Medium,50%,16.0,E-Scooter,Route 2,No,No,Synthetic
+R075,31-07-2026,9:20 AM,1st Year,Bike,Splendor Plus,Kandoli,Bidholi,2.7,6.0,115.0,Card,Clear,Medium,Personal,3.8,11.0,Medium,98%,8.0,Scooter,Route 2,Yes,No,Synthetic
+R076,25-07-2026,10:20 AM,2nd Year,E-Scooter,Ather 450X,Prem Nagar,UPES Bidholi,10.6,43.0,185.0,Card,Clear,High,College,5.0,11.0,High,43%,42.0,Car,Route 2,Yes,No,Synthetic
+R077,19-07-2026,8:15 PM,1st Year,Scooter,Jupiter,Kandoli,Pondha,10.6,34.0,200.0,UPI,Clear,Medium,Food,4.6,9.0,Medium,77%,30.0,Scooter,Route 1,Yes,No,Synthetic
+R078,21-07-2026,8:45 PM,2nd Year,Car,WagonR,Bidholi,Bidholi,5.9,17.0,295.0,Cash,Cloudy,Medium,Personal,4.3,2.0,High,82%,17.0,Car,Route 1,Yes,No,Synthetic
+R079,17-07-2026,9:15 AM,1st Year,Bike,Splendor Plus,UPES Bidholi,Nanda Ki Chowki,15.5,38.0,345.0,Cash,Cloudy,Low,Personal,3.1,3.0,Medium,38%,34.0,Bike,Route 1,Yes,No,Synthetic
+R080,04-07-2026,9:30 AM,4th Year,Bike,Apache RTR,UPES Bidholi,Sudhowala,9.2,39.0,220.0,Cash,Cloudy,High,Personal,4.6,2.0,Medium,42%,37.0,Bike,Route 1,No,No,Synthetic
+R081,08-07-2026,1:50 PM,2nd Year,Scooter,Activa 6G,Nanda Ki Chowki,UPES Bidholi,2.5,12.0,45.0,Cash,Clear,High,Food,4.2,11.0,Medium,91%,10.0,Bike,Route 2,Yes,No,Synthetic
+R082,17-07-2026,12:40 PM,2nd Year,Car,Baleno,Prem Nagar,Kandoli,11.7,28.0,495.0,UPI,Clear,Low,Personal,4.7,9.0,Medium,27%,26.0,Bike,Route 2,No,No,Synthetic
+R083,26-07-2026,11:20 AM,1st Year,Scooter,Jupiter,UPES Bidholi,Bidholi,12.2,26.0,215.0,,Rainy,Low,College,3.6,9.0,Medium,41%,27.0,E-Scooter,Route 1,Yes,No,Synthetic
+R084,14-07-2026,10:55 AM,2nd Year,Bike,Splendor Plus,Nanda Ki Chowki,Kandoli,9.2,28.0,235.0,UPI,Clear,Medium,Food,3.6,6.0,Medium,36%,26.0,Bike,Route 2,Yes,No,Synthetic
+R085,18-07-2026,7:45 PM,3rd Year,Bike,Splendor Plus,Prem Nagar,Bidholi,12.7,28.0,280.0,UPI,Cloudy,Low,Shopping,5.0,6.0,High,45%,28.0,Bike,Route 1,Yes,No,Synthetic
+R086,07-07-2026,6:15 PM,1st Year,E-Scooter,Ola S1,Kandoli,Sudhowala,7.9,27.0,140.0,UPI,Clear,Medium,College,3.9,9.0,Medium,72%,23.0,Bike,Route 1,Yes,No,Synthetic
+R087,25-07-2026,8:55 AM,1st Year,Scooter,Jupiter,Bidholi,Nanda Ki Chowki,5.9,14.0,135.0,UPI,Rainy,Low,College,4.5,1.0,Medium,63%,13.0,Bike,Route 2,Yes,No,Synthetic
+R088,18-07-2026,9:10 AM,4th Year,Scooter,Jupiter,Bidholi,Pondha,6.2,16.0,160.0,UPI,Rainy,Low,Food,4.2,3.0,High,79%,14.0,Bike,Route 2,Yes,No,Synthetic
+R089,06-07-2026,9:20 AM,2nd Year,Scooter,Access 125,Nanda Ki Chowki,UPES Bidholi,15.7,35.0,270.0,UPI,Clear,Low,College,4.5,8.0,Low,93%,35.0,E-Scooter,Route 2,Yes,No,Synthetic
+R090,29-07-2026,10:20 AM,2nd Year,Bike,Apache RTR,Nanda Ki Chowki,Prem Nagar,5.9,21.0,165.0,UPI,Cloudy,High,Hostel,4.9,1.0,Low,34%,24.0,Car,Route 1,Yes,No,Synthetic
+R091,19-07-2026,8:30 AM,2nd Year,Scooter,Jupiter,Bidholi,Kandoli,11.0,34.0,200.0,UPI,Cloudy,Medium,Food,4.1,1.0,Low,67%,31.0,Scooter,Route 2,Yes,No,Synthetic
+R092,01-07-2026,12:25 PM,3rd Year,Bike,Splendor Plus,Nanda Ki Chowki,Bidholi,5.4,29.0,165.0,UPI,Clear,High,College,4.7,12.0,High,44%,22.0,Scooter,Route 2,Yes,No,Synthetic
+R093,18-07-2026,1:20 PM,3rd Year,Car,Baleno,UPES Bidholi,Bidholi,12.6,36.0,520.0,UPI,Clear,Medium,Shopping,3.7,9.0,High,86%,36.0,Scooter,Route 2,Yes,No,Synthetic
+R094,04-07-2026,10:45 AM,1st Year,Bike,Splendor Plus,Kandoli,Prem Nagar,8.5,17.0,235.0,Cash,Clear,Low,Food,4.7,7.0,Medium,81%,19.0,E-Scooter,Route 1,Yes,No,Synthetic
+R095,09-07-2026,5:30 PM,3rd Year,Bike,Apache RTR,Prem Nagar,Kandoli,10.7,26.0,250.0,UPI,Clear,Low,Hostel,4.0,1.0,Medium,84%,24.0,E-Scooter,Route 2,Yes,No,Synthetic
+R096,11-07-2026,10:55 AM,3rd Year,Bike,Classic 350,Kandoli,Bidholi,5.3,24.0,125.0,Cash,Clear,High,Shopping,4.8,11.0,Medium,60%,21.0,E-Scooter,Route 2,Yes,No,Synthetic
+R097,23-07-2026,7:45 AM,2nd Year,Bike,Apache RTR,Kandoli,Sudhowala,2.5,11.0,125.0,UPI,Clear,Medium,College,4.4,8.0,High,56%,7.0,Scooter,Route 2,Yes,No,Synthetic
+R098,26-07-2026,6:45 PM,4th Year,E-Scooter,Ola S1,Kandoli,UPES Bidholi,7.4,22.0,165.0,Cash,Cloudy,Low,Personal,3.7,3.0,Medium,72%,16.0,Scooter,Route 1,Yes,No,Synthetic
+R099,29-07-2026,10:20 AM,3rd Year,Scooter,Access 125,Sudhowala,Pondha,11.8,28.0,245.0,Cash,Rainy,Low,College,3.9,5.0,Medium,71%,26.0,Bike,Route 2,Yes,No,Synthetic
+R100,15-07-2026,12:55 PM,2nd Year,Scooter,Activa 6G,UPES Bidholi,Kandoli,6.2,22.0,145.0,Cash,Clear,Low,Food,3.5,12.0,Medium,,14.0,E-Scooter,Route 2,Yes,No,Synthetic
+R101,24-07-2026,9:10 AM,3rd Year,Car,Baleno,UPES Bidholi,Pondha,14.2,37.0,535.0,UPI,Rainy,Low,Food,4.8,8.0,Low,41%,32.0,E-Scooter,Route 1,Yes,No,Synthetic
+R102,27-07-2026,4:55 PM,4th Year,Car,Baleno,Bidholi,Sudhowala,9.4,15.0,415.0,Cash,Rainy,Low,Personal,4.6,7.0,High,89%,21.0,E-Scooter,Route 1,Yes,No,Synthetic
+R103,04-07-2026,3:25 PM,3rd Year,Scooter,Access 125,Pondha,Bidholi,12.8,38.0,235.0,Card,Cloudy,Medium,Personal,3.8,5.0,Medium,40%,37.0,Car,Route 1,No,No,Synthetic
+R104,10-07-2026,6:20 PM,4th Year,Scooter,Activa 6G,Pondha,Kandoli,6.1,23.0,120.0,Card,Clear,High,Shopping,3.8,7.0,Medium,82%,24.0,Scooter,Route 1,Yes,No,Synthetic
+R105,23-07-2026,9:20 AM,2nd Year,Car,WagonR,Nanda Ki Chowki,Prem Nagar,3.9,13.0,235.0,UPI,Rainy,Low,Hostel,4.1,12.0,Medium,41%,9.0,E-Scooter,Route 2,Yes,No,Synthetic
+R106,25-07-2026,6:30 PM,1st Year,Scooter,Jupiter,Sudhowala,UPES Bidholi,9.8,29.0,185.0,Card,Clear,Medium,Hostel,4.1,7.0,Medium,86%,28.0,E-Scooter,Route 1,Yes,No,Synthetic
+R107,17-07-2026,7:40 PM,2nd Year,Bike,Classic 350,Kandoli,UPES Bidholi,3.3,12.0,120.0,UPI,Clear,High,Personal,3.5,12.0,High,55%,13.0,Car,Route 1,Yes,No,Synthetic
+R108,17-07-2026,10:20 AM,3rd Year,Scooter,Access 125,Prem Nagar,Bidholi,5.0,17.0,130.0,UPI,Clear,Low,Shopping,3.9,6.0,Low,33%,11.0,Bike,Route 1,Yes,No,Synthetic
+R109,10-07-2026,8:45 AM,4th Year,Car,WagonR,Prem Nagar,Bidholi,15.3,36.0,610.0,UPI,Cloudy,Low,College,4.0,1.0,Medium,26%,34.0,Bike,Route 2,Yes,No,Synthetic
+R110,17-07-2026,8:10 AM,4th Year,Scooter,Access 125,Sudhowala,UPES Bidholi,13.3,45.0,235.0,Cash,Cloudy,Medium,Hostel,3.4,3.0,High,49%,38.0,Bike,Route 1,Yes,No,Synthetic
+R111,26-07-2026,8:15 AM,4th Year,Car,Baleno,Nanda Ki Chowki,UPES Bidholi,10.2,28.0,415.0,UPI,Clear,Medium,Personal,4.2,1.0,Medium,26%,29.0,Car,Route 2,Yes,No,Synthetic
+R112,26-07-2026,9:25 AM,3rd Year,Scooter,Access 125,Sudhowala,UPES Bidholi,6.0,13.0,130.0,UPI,Rainy,Low,Food,3.6,5.0,Medium,45%,13.0,Car,Route 2,Yes,No,Synthetic
+R113,24-07-2026,11:25 AM,3rd Year,Bike,Apache RTR,Nanda Ki Chowki,Nanda Ki Chowki,5.7,24.0,185.0,Cash,Rainy,Medium,College,4.1,11.0,High,37%,16.0,Scooter,Route 1,Yes,No,Synthetic
+R114,04-07-2026,8:30 AM,4th Year,E-Scooter,Ola S1,Bidholi,Nanda Ki Chowki,2.3,10.0,95.0,UPI,Cloudy,Low,Food,4.2,7.0,High,26%,5.0,Scooter,Route 2,No,No,Synthetic
+R115,08-07-2026,8:00 AM,1st Year,Scooter,Activa 6G,Prem Nagar,Kandoli,2.6,9.0,105.0,Cash,Clear,High,Hostel,4.0,11.0,High,39%,10.0,E-Scooter,Route 2,Yes,No,Synthetic
+R116,11-07-2026,8:10 AM,4th Year,Car,Baleno,Bidholi,Sudhowala,7.5,27.0,320.0,UPI,Rainy,Medium,College,3.4,11.0,Medium,33%,21.0,E-Scooter,Route 1,Yes,No,Synthetic
+R117,03-07-2026,3:00 PM,1st Year,Car,Alto K10,Prem Nagar,Prem Nagar,2.1,6.0,180.0,Cash,Clear,Medium,Personal,4.4,6.0,Low,57%,6.0,Car,Route 2,Yes,No,Synthetic
+R118,16-07-2026,11:30 AM,1st Year,Bike,Splendor Plus,Pondha,Bidholi,7.6,17.0,205.0,Card,Clear,Low,Hostel,4.7,12.0,High,45%,17.0,Bike,Route 1,Yes,No,Synthetic
+R119,11-07-2026,7:25 AM,3rd Year,Bike,Apache RTR,Nanda Ki Chowki,Kandoli,5.7,19.0,160.0,UPI,Rainy,,College,3.4,8.0,Low,38%,13.0,Scooter,Route 1,No,No,Synthetic
+R120,18-07-2026,8:10 PM,4th Year,Bike,Classic 350,Bidholi,Nanda Ki Chowki,8.3,38.0,205.0,UPI,Clear,High,College,5.0,6.0,Low,44%,33.0,Bike,Route 1,No,No,Synthetic
+R121,22-07-2026,8:40 PM,4th Year,Bike,Pulsar 150,Sudhowala,Nanda Ki Chowki,8.4,39.0,195.0,UPI,Clear,High,Personal,3.8,9.0,Medium,70%,34.0,E-Scooter,Route 2,Yes,No,Synthetic
+R122,20-07-2026,9:30 AM,4th Year,Bike,Splendor Plus,Nanda Ki Chowki,Bidholi,7.2,22.0,205.0,UPI,Rainy,Low,College,3.9,12.0,Low,48%,16.0,Scooter,Route 2,Yes,No,Synthetic
+R123,18-07-2026,10:25 AM,3rd Year,Scooter,Access 125,Pondha,Pondha,15.7,46.0,270.0,Card,Clear,Medium,Shopping,4.3,7.0,Low,43%,45.0,Car,Route 2,No,No,Synthetic
+R124,27-07-2026,5:20 PM,1st Year,Bike,Classic 350,Sudhowala,Bidholi,9.3,32.0,195.0,UPI,Clear,Medium,Hostel,4.1,6.0,Low,83%,27.0,E-Scooter,Route 2,No,No,Synthetic
+R125,14-07-2026,4:55 PM,1st Year,Bike,Splendor Plus,Prem Nagar,UPES Bidholi,15.1,37.0,330.0,UPI,Clear,Low,Hostel,5.0,9.0,High,36%,34.0,Car,Route 2,Yes,No,Synthetic
+R126,09-07-2026,11:50 AM,3rd Year,E-Scooter,Ola S1,Bidholi,Bidholi,11.0,37.0,180.0,UPI,Clear,Medium,Hostel,4.2,11.0,Low,26%,31.0,Bike,Route 1,Yes,No,Synthetic
+R127,29-07-2026,1:30 PM,3rd Year,Car,Baleno,Kandoli,Sudhowala,12.5,54.0,510.0,UPI,Clear,High,College,4.1,10.0,High,62%,50.0,Car,Route 1,Yes,No,Synthetic
+R128,01-07-2026,8:45 AM,3rd Year,Car,Swift,Prem Nagar,Pondha,16.4,37.0,615.0,UPI,Rainy,Low,Personal,4.7,9.0,Medium,78%,36.0,Bike,Route 2,Yes,No,Synthetic
+R129,23-07-2026,4:00 PM,1st Year,Bike,Apache RTR,Nanda Ki Chowki,Kandoli,9.4,44.0,245.0,UPI,Clear,High,Shopping,4.3,9.0,Medium,33%,38.0,Scooter,Route 2,Yes,No,Synthetic
+R130,18-07-2026,10:00 AM,3rd Year,Scooter,Activa 6G,Bidholi,Nanda Ki Chowki,3.7,12.0,120.0,UPI,Clear,Low,Hostel,4.4,12.0,Low,63%,8.0,E-Scooter,Route 1,Yes,No,Synthetic
+R131,11-07-2026,11:40 AM,2nd Year,E-Scooter,Ola S1,Prem Nagar,Bidholi,8.3,20.0,135.0,Cash,Clear,Medium,College,3.6,10.0,Medium,34%,24.0,Scooter,Route 2,Yes,No,Synthetic
+R132,28-07-2026,11:10 AM,3rd Year,Car,Swift,Prem Nagar,UPES Bidholi,11.9,34.0,490.0,Card,Clear,Low,Personal,,11.0,Medium,60%,26.0,Car,Route 2,Yes,No,Synthetic
+R133,08-07-2026,6:25 PM,1st Year,Scooter,Access 125,Pondha,Prem Nagar,12.1,33.0,230.0,Cash,Clear,Medium,Personal,4.8,10.0,Medium,72%,35.0,E-Scooter,Route 2,No,No,Synthetic
+R134,28-07-2026,7:20 PM,2nd Year,Car,Alto K10,Nanda Ki Chowki,UPES Bidholi,3.5,13.0,250.0,Card,Clear,High,Personal,4.6,10.0,Low,66%,14.0,Scooter,Route 1,Yes,No,Synthetic
+R135,17-07-2026,11:50 AM,1st Year,Car,Alto K10,Nanda Ki Chowki,Pondha,13.6,43.0,500.0,Cash,Clear,Medium,Shopping,3.8,10.0,Medium,52%,39.0,Bike,Route 1,Yes,No,Synthetic
+R136,04-07-2026,5:15 PM,4th Year,Scooter,Jupiter,Sudhowala,Nanda Ki Chowki,12.3,47.0,250.0,UPI,Clear,High,Food,4.0,1.0,Medium,36%,49.0,Bike,Route 2,Yes,No,Synthetic
+R137,05-07-2026,12:10 PM,1st Year,Scooter,Jupiter,UPES Bidholi,Kandoli,8.1,23.0,190.0,UPI,Clear,Low,Hostel,3.6,12.0,Low,76%,18.0,Bike,Route 2,Yes,No,Synthetic
+R138,11-07-2026,8:00 PM,3rd Year,Bike,Classic 350,Sudhowala,Bidholi,4.0,9.0,135.0,Card,Rainy,Medium,Food,3.5,8.0,Medium,81%,11.0,Car,Route 1,No,No,Synthetic
+R139,12-07-2026,11:20 AM,1st Year,Bike,Classic 350,Kandoli,Pondha,12.5,37.0,290.0,Card,Cloudy,Medium,Hostel,3.4,5.0,Medium,70%,36.0,Bike,Route 2,Yes,No,Synthetic
+R140,04-07-2026,4:00 PM,3rd Year,Car,Baleno,Bidholi,Nanda Ki Chowki,16.3,70.0,655.0,Cash,Cloudy,High,Hostel,4.1,7.0,High,96%,65.0,Scooter,Route 2,Yes,No,Synthetic
+R141,24-07-2026,7:25 AM,4th Year,Scooter,Jupiter,Prem Nagar,Prem Nagar,13.3,49.0,255.0,UPI,Clear,High,Food,4.0,12.0,High,74%,53.0,E-Scooter,Route 1,No,No,Synthetic
+R142,15-07-2026,11:50 AM,4th Year,Car,Alto K10,Bidholi,Nanda Ki Chowki,2.5,7.0,205.0,UPI,Rainy,Low,Personal,4.0,10.0,Low,94%,6.0,E-Scooter,Route 2,Yes,No,Synthetic
+R143,21-07-2026,7:25 AM,3rd Year,Scooter,Jupiter,UPES Bidholi,UPES Bidholi,3.7,13.0,85.0,Cash,Clear,Medium,Personal,3.6,6.0,Medium,76%,11.0,Scooter,Route 2,Yes,No,Synthetic
+R144,28-07-2026,1:10 PM,2nd Year,Car,WagonR,Pondha,Nanda Ki Chowki,8.7,30.0,395.0,UPI,Clear,Medium,Hostel,4.6,1.0,High,69%,25.0,Scooter,Route 1,Yes,No,Synthetic
+R145,19-07-2026,8:55 PM,3rd Year,Scooter,Jupiter,Prem Nagar,Nanda Ki Chowki,2.0,14.0,60.0,UPI,Clear,Medium,Food,4.3,2.0,Medium,25%,6.0,Bike,Route 2,Yes,No,Synthetic
+R146,22-07-2026,12:50 PM,2nd Year,Bike,Pulsar 150,Bidholi,UPES Bidholi,15.9,64.0,360.0,UPI,Clear,High,Personal,3.7,5.0,High,86%,64.0,Car,Route 2,Yes,No,Synthetic
+R147,12-07-2026,9:55 AM,4th Year,Scooter,Jupiter,Pondha,Nanda Ki Chowki,4.8,16.0,155.0,Cash,Clear,Medium,Shopping,4.4,6.0,High,77%,14.0,Scooter,Route 2,Yes,No,Synthetic
+R148,30-07-2026,7:10 PM,4th Year,Car,WagonR,Sudhowala,Prem Nagar,3.7,12.0,235.0,Card,Cloudy,Medium,Food,4.0,4.0,Medium,73%,11.0,Car,Route 2,No,No,Synthetic
+R149,27-07-2026,7:50 PM,3rd Year,Car,Swift,Nanda Ki Chowki,Pondha,5.5,19.0,285.0,UPI,Clear,Medium,College,4.8,7.0,Low,35%,16.0,Bike,Route 1,Yes,No,Synthetic
+R150,18-07-2026,9:50 AM,1st Year,Car,Swift,Pondha,Sudhowala,6.0,15.0,315.0,UPI,Rainy,Medium,Shopping,4.0,8.0,Low,75%,17.0,Car,Route 1,Yes,No,Synthetic
+R151,09-07-2026,3:50 PM,1st Year,Bike,Classic 350,Prem Nagar,Bidholi,13.0,40.0,270.0,UPI,Clear,Medium,Hostel,4.6,7.0,Medium,91%,37.0,E-Scooter,Route 2,Yes,No,Synthetic
+R152,20-07-2026,1:30 PM,1st Year,Scooter,Access 125,Sudhowala,UPES Bidholi,5.2,18.0,110.0,Cash,Rainy,Low,Shopping,4.3,1.0,Medium,71%,12.0,E-Scooter,Route 2,No,No,Synthetic
+R153,09-07-2026,10:20 AM,1st Year,Bike,Classic 350,Nanda Ki Chowki,Pondha,14.1,45.0,320.0,Cash,Clear,Medium,Food,4.0,10.0,High,66%,40.0,Scooter,Route 2,Yes,No,Synthetic
+R154,04-07-2026,6:40 PM,3rd Year,Bike,Splendor Plus,Nanda Ki Chowki,Sudhowala,5.9,18.0,170.0,UPI,Clear,Medium,Hostel,3.8,2.0,High,73%,17.0,Bike,Route 1,Yes,No,Synthetic
+R155,04-07-2026,10:15 AM,1st Year,Bike,Apache RTR,Kandoli,Kandoli,2.0,10.0,65.0,UPI,Cloudy,Low,Shopping,3.9,11.0,Medium,49%,4.0,E-Scooter,Route 2,Yes,No,Synthetic
+R156,19-07-2026,12:55 PM,4th Year,Scooter,Activa 6G,Kandoli,Nanda Ki Chowki,2.2,8.0,85.0,UPI,Rainy,Medium,College,4.6,12.0,High,32%,6.0,Car,Route 2,No,No,Synthetic
+R157,18-07-2026,8:20 PM,1st Year,Car,Baleno,Nanda Ki Chowki,Prem Nagar,5.5,14.0,275.0,UPI,Clear,Low,Hostel,4.6,11.0,Medium,66%,12.0,Bike,Route 2,Yes,No,Synthetic
+R158,03-07-2026,4:00 PM,1st Year,Scooter,Jupiter,Sudhowala,Bidholi,9.3,26.0,205.0,Card,Clear,Medium,Hostel,4.3,12.0,High,71%,27.0,Bike,Route 1,Yes,No,Synthetic
+R159,19-07-2026,3:20 PM,2nd Year,Bike,Apache RTR,Bidholi,Nanda Ki Chowki,14.9,36.0,295.0,UPI,Cloudy,Low,Personal,4.2,5.0,Low,52%,33.0,Car,Route 2,Yes,No,Synthetic
+R160,08-07-2026,12:50 PM,2nd Year,Bike,Apache RTR,Nanda Ki Chowki,Sudhowala,15.4,41.0,305.0,Card,Clear,Low,College,3.7,3.0,Medium,66%,34.0,E-Scooter,Route 1,Yes,No,Synthetic
+R161,19-07-2026,2:15 PM,2nd Year,Bike,Splendor Plus,UPES Bidholi,Prem Nagar,2.6,5.0,120.0,UPI,Rainy,Low,Personal,3.0,9.0,Medium,76%,6.0,E-Scooter,Route 2,Yes,No,Synthetic
+R162,19-07-2026,3:30 PM,4th Year,Scooter,Activa 6G,Pondha,Bidholi,7.7,32.0,160.0,,Cloudy,High,Hostel,3.3,1.0,Low,51%,31.0,Bike,Route 1,Yes,No,Synthetic
+R163,19-07-2026,1:20 PM,1st Year,E-Scooter,Ather 450X,Pondha,Nanda Ki Chowki,13.9,41.0,190.0,UPI,Cloudy,Medium,Food,4.5,11.0,Low,49%,40.0,Scooter,Route 2,Yes,No,Synthetic
+R164,10-07-2026,7:00 AM,1st Year,Bike,Splendor Plus,UPES Bidholi,Kandoli,6.1,23.0,150.0,Cash,Rainy,High,College,2.9,12.0,Medium,90%,24.0,E-Scooter,Route 1,Yes,No,Synthetic
+R165,16-07-2026,5:10 PM,3rd Year,Car,Alto K10,Kandoli,Nanda Ki Chowki,7.1,20.0,335.0,UPI,Clear,Medium,Personal,3.7,6.0,Medium,45%,20.0,Car,Route 1,No,No,Synthetic
+R166,02-07-2026,9:55 AM,3rd Year,Bike,Splendor Plus,Sudhowala,Sudhowala,14.0,31.0,300.0,UPI,Clear,Low,College,4.0,1.0,Medium,26%,31.0,Car,Route 1,Yes,No,Synthetic
+R167,15-07-2026,10:20 AM,4th Year,Scooter,Jupiter,Bidholi,Nanda Ki Chowki,15.0,48.0,250.0,UPI,Cloudy,Medium,Hostel,4.5,8.0,High,31%,43.0,E-Scooter,Route 1,Yes,No,Synthetic
+R168,04-07-2026,2:45 PM,2nd Year,Scooter,Activa 6G,Prem Nagar,Pondha,6.4,25.0,110.0,UPI,Rainy,High,Shopping,4.4,5.0,Medium,58%,26.0,E-Scooter,Route 1,Yes,No,Synthetic
+R169,06-07-2026,4:45 PM,4th Year,Scooter,Jupiter,Sudhowala,Sudhowala,5.6,26.0,145.0,UPI,Cloudy,High,Food,4.6,9.0,Medium,67%,22.0,Bike,Route 1,No,No,Synthetic
+R170,26-07-2026,3:50 PM,1st Year,Bike,Classic 350,Sudhowala,Prem Nagar,12.9,36.0,280.0,UPI,Clear,Medium,College,4.3,4.0,Low,55%,37.0,E-Scooter,Route 1,Yes,No,Synthetic
+R171,10-07-2026,1:50 PM,4th Year,E-Scooter,Ather 450X,Bidholi,Pondha,11.0,49.0,165.0,Cash,Cloudy,High,Hostel,4.3,1.0,Low,56%,44.0,E-Scooter,Route 1,Yes,No,Synthetic
+R172,14-07-2026,4:25 PM,1st Year,Bike,Classic 350,Pondha,Bidholi,6.2,15.0,150.0,UPI,Clear,Low,Hostel,3.4,3.0,High,94%,14.0,E-Scooter,Route 2,Yes,No,Synthetic
+R173,24-07-2026,4:45 PM,3rd Year,Car,Swift,Prem Nagar,Kandoli,15.1,60.0,595.0,Card,Clear,High,Hostel,4.2,5.0,Medium,28%,60.0,Scooter,Route 2,Yes,No,Synthetic
+R174,13-07-2026,4:20 PM,3rd Year,Bike,Pulsar 150,UPES Bidholi,Prem Nagar,6.1,17.0,180.0,UPI,Clear,Low,Food,4.0,9.0,High,59%,14.0,Car,Route 1,Yes,No,Synthetic
+R175,14-07-2026,7:25 PM,3rd Year,Scooter,Activa 6G,Bidholi,Bidholi,3.4,19.0,110.0,UPI,Clear,High,Shopping,3.8,2.0,Medium,41%,14.0,E-Scooter,Route 1,Yes,No,Synthetic
+R176,11-07-2026,4:30 PM,1st Year,Bike,Apache RTR,Bidholi,Kandoli,2.2,6.0,105.0,Cash,Rainy,Medium,Hostel,4.3,8.0,High,53%,6.0,E-Scooter,Route 1,Yes,No,Synthetic
+R177,28-07-2026,8:45 PM,1st Year,Car,WagonR,Kandoli,UPES Bidholi,1.3,5.0,130.0,UPI,Clear,Low,Hostel,4.3,7.0,Medium,38%,4.0,Car,Route 2,Yes,No,Synthetic
+R178,08-07-2026,6:50 PM,1st Year,Scooter,Access 125,Pondha,UPES Bidholi,16.0,65.0,330.0,Cash,Rainy,High,Personal,4.7,1.0,High,59%,64.0,Car,Route 1,Yes,No,Synthetic
+R179,24-07-2026,2:55 PM,1st Year,Scooter,Activa 6G,Sudhowala,Nanda Ki Chowki,10.6,48.0,205.0,UPI,Clear,High,Food,4.7,2.0,Medium,44%,42.0,Bike,Route 2,Yes,No,Synthetic
+R180,26-07-2026,5:00 PM,1st Year,Car,Swift,Sudhowala,Sudhowala,9.8,36.0,450.0,UPI,Clear,Medium,Food,3.9,3.0,Low,37%,28.0,Bike,Route 2,Yes,No,Synthetic
+R181,12-07-2026,8:25 PM,1st Year,Bike,Pulsar 150,Nanda Ki Chowki,Nanda Ki Chowki,12.3,54.0,280.0,UPI,Clear,High,Food,4.7,7.0,Medium,68%,49.0,Car,Route 1,Yes,No,Synthetic
+R182,06-07-2026,1:25 PM,1st Year,Bike,Classic 350,Kandoli,Sudhowala,15.7,33.0,350.0,Cash,Clear,Low,College,4.7,9.0,Medium,97%,35.0,Car,Route 1,Yes,No,Synthetic
+R183,16-07-2026,8:55 PM,3rd Year,Scooter,Jupiter,Kandoli,Sudhowala,15.4,65.0,290.0,UPI,Clear,High,Personal,4.9,8.0,Medium,67%,62.0,Bike,Route 2,Yes,No,Synthetic
+R184,18-07-2026,12:45 PM,4th Year,Bike,Pulsar 150,Sudhowala,Nanda Ki Chowki,7.7,25.0,160.0,UPI,Clear,Medium,College,4.5,1.0,Low,59%,22.0,Bike,Route 1,Yes,No,Synthetic
+R185,06-07-2026,9:45 AM,2nd Year,Scooter,Jupiter,UPES Bidholi,Pondha,6.8,17.0,145.0,Cash,Cloudy,Low,Hostel,4.2,9.0,Low,79%,15.0,Scooter,Route 2,Yes,No,Synthetic
+R186,17-07-2026,6:25 PM,2nd Year,E-Scooter,Ola S1,Kandoli,Kandoli,8.4,24.0,170.0,Card,Clear,Medium,Hostel,3.8,9.0,Low,73%,24.0,E-Scooter,Route 2,Yes,No,Synthetic
+R187,07-07-2026,6:00 PM,4th Year,Car,Baleno,Nanda Ki Chowki,UPES Bidholi,13.6,57.0,540.0,UPI,Cloudy,High,College,4.9,4.0,Medium,32%,54.0,Car,Route 1,Yes,No,Synthetic
+R188,26-07-2026,10:40 AM,4th Year,Scooter,Access 125,UPES Bidholi,Nanda Ki Chowki,5.9,21.0,130.0,UPI,Clear,Medium,Hostel,4.0,9.0,Low,39%,17.0,Bike,Route 1,Yes,No,Synthetic
+R189,08-07-2026,8:10 AM,2nd Year,Scooter,Access 125,Sudhowala,Bidholi,5.3,18.0,145.0,UPI,Clear,Low,Food,4.0,9.0,High,76%,12.0,Car,Route 1,Yes,No,Synthetic
+R190,07-07-2026,2:10 PM,3rd Year,Bike,Classic 350,Prem Nagar,Prem Nagar,9.2,30.0,205.0,UPI,Clear,Medium,Food,4.8,2.0,Low,41%,26.0,Bike,Route 2,Yes,No,Synthetic
+R191,24-07-2026,8:10 AM,1st Year,Car,Swift,Prem Nagar,Pondha,12.4,39.0,505.0,UPI,Cloudy,Medium,Shopping,,12.0,Medium,30%,35.0,E-Scooter,Route 1,Yes,No,Synthetic
+R192,17-07-2026,2:30 PM,1st Year,Bike,Apache RTR,Pondha,Kandoli,14.9,45.0,325.0,UPI,Cloudy,Medium,Personal,3.3,5.0,Medium,46%,43.0,Car,Route 1,Yes,No,Synthetic
+R193,23-07-2026,8:20 AM,2nd Year,Scooter,Activa 6G,Kandoli,UPES Bidholi,13.3,34.0,235.0,UPI,Clear,Low,Shopping,3.5,10.0,Medium,26%,30.0,E-Scooter,Route 2,Yes,No,Synthetic
+R194,04-07-2026,7:20 AM,3rd Year,Car,Swift,UPES Bidholi,Bidholi,9.1,22.0,385.0,UPI,Cloudy,Low,Personal,4.4,2.0,Low,39%,20.0,E-Scooter,Route 2,Yes,No,Synthetic
+R195,05-07-2026,6:40 PM,1st Year,Car,Baleno,Bidholi,Sudhowala,9.5,25.0,415.0,UPI,Clear,Low,Food,5.0,9.0,Medium,95%,21.0,Bike,Route 2,Yes,No,Synthetic
+R196,26-07-2026,6:55 PM,4th Year,E-Scooter,Ola S1,Pondha,Bidholi,12.5,28.0,215.0,UPI,Clear,Low,Shopping,4.0,9.0,Medium,63%,28.0,Car,Route 2,Yes,No,Synthetic
+R197,28-07-2026,5:20 PM,2nd Year,E-Scooter,Ather 450X,Kandoli,Kandoli,15.0,62.0,240.0,Cash,Cloudy,High,Shopping,5.0,4.0,High,87%,60.0,Bike,Route 2,Yes,No,Synthetic
+R198,23-07-2026,4:20 PM,1st Year,Scooter,Activa 6G,UPES Bidholi,Bidholi,12.7,38.0,255.0,Cash,Clear,Medium,Hostel,4.4,11.0,High,53%,36.0,Bike,Route 1,Yes,No,Synthetic
+R199,18-07-2026,1:45 PM,2nd Year,Bike,Splendor Plus,Sudhowala,Bidholi,9.0,38.0,220.0,UPI,Clear,High,Hostel,4.5,2.0,Medium,42%,36.0,Scooter,Route 2,Yes,No,Synthetic
+R200,25-07-2026,11:40 AM,4th Year,Bike,Apache RTR,UPES Bidholi,Pondha,11.9,23.0,275.0,UPI,Rainy,Low,Food,3.3,4.0,Low,35%,26.0,E-Scooter,Route 2,Yes,No,Synthetic
+R201,07-07-2026,5:15 PM,4th Year,Bike,Splendor Plus,Bidholi,Pondha,11.4,33.0,300.0,Card,Clear,Medium,College,5.0,7.0,Medium,35%,33.0,E-Scooter,Route 2,Yes,No,Synthetic
+R202,31-07-2026,1:10 PM,1st Year,Car,Baleno,Sudhowala,Nanda Ki Chowki,5.7,11.0,280.0,Card,Clear,Low,Shopping,3.8,2.0,Medium,69%,13.0,Scooter,Route 2,No,No,Synthetic
+R203,21-07-2026,5:10 PM,3rd Year,Bike,Classic 350,Pondha,Bidholi,4.5,18.0,145.0,Cash,Cloudy,Medium,Shopping,3.6,7.0,Medium,67%,13.0,Bike,Route 2,Yes,No,Synthetic
+R204,16-07-2026,1:25 PM,4th Year,Bike,Pulsar 150,Bidholi,Kandoli,9.9,30.0,205.0,Cash,Clear,Medium,Food,4.0,11.0,Medium,45%,28.0,Scooter,Route 1,No,No,Synthetic
+R205,01-07-2026,8:20 AM,3rd Year,Scooter,Activa 6G,Bidholi,Prem Nagar,1.8,8.0,60.0,Card,Clear,High,College,4.6,11.0,Low,85%,7.0,Scooter,Route 1,Yes,No,Synthetic
+R206,20-07-2026,11:25 AM,4th Year,Bike,Pulsar 150,Bidholi,Kandoli,12.3,34.0,275.0,UPI,Cloudy,Medium,Food,4.1,9.0,Low,62%,35.0,Bike,Route 2,Yes,No,Synthetic
+R207,24-07-2026,10:55 AM,4th Year,Car,Swift,Kandoli,Bidholi,3.0,11.0,180.0,UPI,Cloudy,High,Hostel,4.4,6.0,Medium,,12.0,Bike,Route 2,Yes,No,Synthetic
+R208,07-07-2026,5:40 PM,3rd Year,Bike,Apache RTR,Bidholi,Pondha,8.0,26.0,185.0,UPI,Clear,Medium,Shopping,3.7,4.0,High,34%,23.0,Scooter,Route 2,No,No,Synthetic
+R209,03-07-2026,7:10 AM,1st Year,Bike,Apache RTR,Kandoli,Kandoli,15.0,36.0,340.0,UPI,Cloudy,Low,College,4.6,4.0,Medium,41%,33.0,Scooter,Route 2,No,No,Synthetic
+R210,04-07-2026,1:25 PM,4th Year,Scooter,Access 125,Bidholi,Bidholi,2.1,6.0,70.0,UPI,Cloudy,Medium,Hostel,5.0,11.0,Medium,43%,6.0,Car,Route 1,Yes,No,Synthetic
+R211,03-07-2026,11:45 AM,3rd Year,Scooter,Access 125,Pondha,Kandoli,15.1,36.0,255.0,UPI,Clear,Low,Personal,4.4,7.0,Medium,73%,34.0,Scooter,Route 1,Yes,No,Synthetic
+R212,20-07-2026,1:50 PM,3rd Year,Scooter,Activa 6G,Sudhowala,Kandoli,1.4,5.0,75.0,UPI,Clear,Medium,Shopping,4.2,1.0,Low,35%,4.0,Car,Route 1,Yes,No,Synthetic
+R213,26-07-2026,12:20 PM,1st Year,Car,Alto K10,Pondha,Bidholi,3.5,10.0,215.0,UPI,Cloudy,High,Hostel,3.9,3.0,Medium,44%,14.0,Car,Route 1,Yes,No,Synthetic
+R214,08-07-2026,1:10 PM,4th Year,Scooter,Activa 6G,Nanda Ki Chowki,Prem Nagar,13.9,41.0,235.0,UPI,Clear,Medium,Shopping,4.7,9.0,High,85%,40.0,Bike,Route 2,Yes,No,Synthetic
+R215,27-07-2026,10:20 AM,2nd Year,Scooter,Activa 6G,Prem Nagar,Pondha,10.6,35.0,215.0,UPI,Clear,Medium,College,4.6,1.0,High,78%,30.0,Scooter,Route 1,Yes,No,Synthetic
+R216,28-07-2026,3:15 PM,3rd Year,Scooter,Activa 6G,Pondha,Prem Nagar,3.2,11.0,65.0,UPI,Clear,Medium,College,4.7,10.0,High,43%,9.0,Scooter,Route 2,Yes,No,Synthetic
+R217,30-07-2026,4:15 PM,3rd Year,Car,Alto K10,Prem Nagar,UPES Bidholi,10.6,43.0,410.0,UPI,Cloudy,High,Shopping,3.9,5.0,Low,44%,42.0,Scooter,Route 2,Yes,No,Synthetic
+R218,02-07-2026,2:10 PM,1st Year,Bike,Pulsar 150,UPES Bidholi,Kandoli,13.0,33.0,290.0,UPI,Cloudy,Medium,Shopping,4.4,5.0,Medium,28%,37.0,E-Scooter,Route 2,Yes,No,Synthetic
+R219,15-07-2026,3:15 PM,1st Year,Scooter,Jupiter,Pondha,Nanda Ki Chowki,8.5,26.0,185.0,UPI,Cloudy,Medium,College,4.0,6.0,Medium,89%,24.0,E-Scooter,Route 1,No,No,Synthetic
+R220,16-07-2026,12:40 PM,1st Year,Scooter,Jupiter,Bidholi,Pondha,7.9,25.0,155.0,UPI,Clear,Medium,Food,3.6,8.0,Medium,28%,23.0,Car,Route 2,Yes,No,Synthetic
+R221,05-07-2026,8:45 AM,2nd Year,Car,Baleno,Nanda Ki Chowki,Bidholi,9.8,41.0,430.0,UPI,Clear,High,Food,4.3,2.0,High,96%,39.0,Car,Route 1,Yes,No,Synthetic
+R222,27-07-2026,10:55 AM,3rd Year,Bike,Apache RTR,Kandoli,Nanda Ki Chowki,11.3,33.0,240.0,UPI,Rainy,Medium,Shopping,3.8,6.0,Medium,57%,32.0,Bike,Route 1,Yes,No,Synthetic
+R223,01-07-2026,6:30 PM,2nd Year,E-Scooter,Ather 450X,Bidholi,Bidholi,10.9,39.0,145.0,Cash,Rainy,Medium,Shopping,3.8,5.0,Medium,85%,31.0,Bike,Route 2,Yes,No,Synthetic
+R224,14-07-2026,8:30 PM,3rd Year,Bike,Pulsar 150,Kandoli,Kandoli,12.0,37.0,275.0,Card,Clear,Medium,Food,4.2,1.0,Medium,83%,34.0,E-Scooter,Route 2,Yes,No,Synthetic
+R225,14-07-2026,7:30 AM,1st Year,Scooter,Access 125,Kandoli,Prem Nagar,1.3,5.0,75.0,UPI,Clear,Medium,Food,3.9,8.0,Medium,38%,4.0,Scooter,Route 2,Yes,No,Synthetic
+R226,26-07-2026,5:30 PM,4th Year,Bike,Classic 350,Prem Nagar,Prem Nagar,12.2,29.0,270.0,UPI,Clear,Low,Shopping,4.4,7.0,Medium,34%,27.0,Scooter,Route 2,Yes,No,Synthetic
+R227,06-07-2026,11:25 AM,3rd Year,Scooter,Activa 6G,Bidholi,Sudhowala,3.3,12.0,95.0,Cash,Clear,Medium,College,4.0,11.0,Medium,25%,9.0,Scooter,Route 2,Yes,No,Synthetic
+R228,08-07-2026,1:30 PM,2nd Year,Bike,Pulsar 150,Kandoli,UPES Bidholi,2.1,11.0,110.0,UPI,Clear,Medium,College,4.3,8.0,Medium,50%,6.0,E-Scooter,Route 1,Yes,No,Synthetic
+R229,26-07-2026,1:00 PM,3rd Year,Bike,Splendor Plus,Sudhowala,Kandoli,6.7,18.0,190.0,Cash,Clear,Medium,College,4.0,4.0,Low,98%,19.0,Bike,Route 2,Yes,No,Synthetic
+R230,06-07-2026,12:00 PM,3rd Year,Bike,Splendor Plus,Bidholi,Sudhowala,6.2,24.0,165.0,UPI,Rainy,High,Hostel,4.6,12.0,Medium,76%,25.0,E-Scooter,Route 2,Yes,No,Synthetic
+R231,07-07-2026,8:50 PM,4th Year,Scooter,Jupiter,Prem Nagar,Bidholi,16.4,53.0,270.0,UPI,Cloudy,Medium,Hostel,3.9,9.0,Medium,47%,47.0,Car,Route 2,Yes,No,Synthetic
+R232,31-07-2026,12:30 PM,4th Year,Bike,Pulsar 150,UPES Bidholi,Pondha,16.1,52.0,365.0,UPI,Cloudy,Medium,Shopping,4.1,6.0,Medium,50%,46.0,E-Scooter,Route 2,Yes,No,Synthetic
+R233,21-07-2026,3:20 PM,2nd Year,E-Scooter,Ola S1,Pondha,Sudhowala,15.5,64.0,230.0,UPI,Clear,High,Hostel,4.5,2.0,Medium,65%,62.0,Bike,Route 2,Yes,No,Synthetic
+R234,26-07-2026,2:00 PM,1st Year,E-Scooter,Ather 450X,Prem Nagar,Sudhowala,10.6,24.0,175.0,Card,Clear,Low,Hostel,4.4,8.0,High,53%,24.0,Bike,Route 2,Yes,No,Synthetic
+R235,10-07-2026,10:00 AM,2nd Year,Car,Alto K10,UPES Bidholi,Nanda Ki Chowki,2.3,9.0,225.0,UPI,Rainy,High,Personal,4.5,7.0,Medium,61%,9.0,Car,Route 1,No,No,Synthetic
+R236,14-07-2026,7:10 PM,3rd Year,Bike,Classic 350,Nanda Ki Chowki,Bidholi,13.6,39.0,300.0,UPI,Clear,Medium,Shopping,5.0,4.0,Medium,70%,39.0,Car,Route 1,Yes,No,Synthetic
+R237,04-07-2026,12:45 PM,4th Year,Scooter,Activa 6G,Kandoli,Nanda Ki Chowki,11.5,46.0,195.0,UPI,Clear,High,College,3.5,5.0,High,84%,46.0,Scooter,Route 1,Yes,No,Synthetic
+R238,27-07-2026,3:15 PM,2nd Year,Scooter,Access 125,Nanda Ki Chowki,Sudhowala,3.5,14.0,55.0,UPI,Clear,Medium,Personal,4.3,11.0,High,96%,10.0,E-Scooter,Route 1,Yes,No,Synthetic
+R239,22-07-2026,12:45 PM,4th Year,Bike,Pulsar 150,Pondha,Sudhowala,10.9,22.0,210.0,Cash,Cloudy,Low,Personal,4.4,10.0,Low,60%,24.0,Scooter,Route 1,Yes,No,Synthetic
+R240,19-07-2026,3:00 PM,4th Year,Car,Baleno,Pondha,Bidholi,12.9,52.0,520.0,UPI,Rainy,High,Personal,3.4,12.0,Medium,52%,52.0,Bike,Route 1,No,No,Synthetic
