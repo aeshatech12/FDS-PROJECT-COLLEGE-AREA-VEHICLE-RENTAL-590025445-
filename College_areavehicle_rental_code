@@ -1,0 +1,403 @@
+from pathlib import Path
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy import stats
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score, accuracy_score, confusion_matrix
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.feature_selection import SelectKBest, f_regression
+
+
+# ==================== 1. SETUP ====================
+FILE_NAME = "vehicle_rental_v3.csv"
+sns.set_theme(style="whitegrid")
+pd.set_option("display.max_columns", 12)
+pd.set_option("display.width", 120)
+
+
+def heading(title):
+    print("\n" + "=" * 70)
+    print(title)
+    print("=" * 70)
+
+
+def show_chart(title):
+    
+    plt.title(title)
+    plt.tight_layout()
+    plt.show(block=True)
+    plt.close()
+
+
+def decision(p_value):
+    if p_value < 0.05:
+        return "Reject H0 (significant at 5% level)"
+    return "Fail to reject H0 (not significant at 5% level)"
+
+
+# ==================== 2. LOAD AND UNDERSTAND DATA ====================
+
+if not Path(FILE_NAME).exists():
+    raise FileNotFoundError(
+        f"Place {FILE_NAME} in the same folder and run the script from there."
+    )
+
+df = pd.read_csv("vehicle_rental_v3.csv")
+print("Dataset shape:", df.shape)
+print("\nFirst 5 rows:\n", df.head())
+print("\nLast 5 rows:\n", df.tail())
+print("\nColumn names:\n", df.columns.tolist())
+print("\nColumn data types:\n", df.dtypes)
+print("\nUnique values per column:\n", df.nunique())
+
+
+# ==================== 3. DATA CLEANING ====================
+heading("DATA CLEANING AND PREPROCESSING")
+print("Missing values BEFORE cleaning:\n", df.isnull().sum()[lambda s: s > 0])
+print("Duplicate rows BEFORE cleaning:", df.duplicated().sum())
+
+data = df.copy()
+data = data.dropna(how="all")
+data = data.drop_duplicates()
+
+# Standardize spaces in text fields.
+for column in data.select_dtypes(include="object").columns:
+    data[column] = data[column].str.strip()
+
+# Convert percentages such as '82%' into the number 82.
+data["Fuel_Battery_Level"] = pd.to_numeric(
+    data["Fuel_Battery_Level"].astype(str).str.replace("%", "", regex=False),
+    errors="coerce"
+)
+
+# The fallback supports day-month-year values if slash-formatted dates appear.
+def parse_rental_date(value):
+    if pd.isna(value):
+        return pd.NaT
+    value = str(value).strip()
+    if "/" in value:
+        return pd.to_datetime(value, format="%m/%d/%Y", errors="coerce")
+    return pd.to_datetime(value, format="%d-%m-%Y", errors="coerce")
+
+
+data["Rental_Date"] = data["Rental_Date"].apply(parse_rental_date)
+data["Booking_Hour"] = pd.to_datetime(
+    data["Booking_Time"], format="%I:%M %p", errors="coerce"
+).dt.hour
+
+# Fill numerical missing values with the median and categorical with the mode.
+numeric_columns = [
+    "Distance_km", "Duration_min", "Rental_Price_Rs", "Customer_Rating",
+    "Vehicle_Available_Count", "Fuel_Battery_Level", "Expected_Duration_min"
+]
+for column in numeric_columns:
+    data[column] = pd.to_numeric(data[column], errors="coerce")
+    data[column] = data[column].fillna(data[column].median())
+
+categorical_columns = ["Payment_Mode", "Traffic_Level", "Weather", "Demand_Level"]
+for column in categorical_columns:
+    data[column] = data[column].fillna(data[column].mode().iloc[0])
+
+# Discarding records with invalid dates/times.
+data = data.dropna(subset=["Rental_Date", "Booking_Hour"])
+data = data[
+    (data["Distance_km"] > 0)
+    & (data["Duration_min"] > 0)
+    & (data["Rental_Price_Rs"] > 0)
+    & (data["Customer_Rating"].between(1, 5))
+].copy()
+
+print("\nMissing values AFTER cleaning:", data.isnull().sum().sum())
+print("Duplicate rows AFTER cleaning:", data.duplicated().sum())
+print("Cleaned dataset shape:", data.shape)
+
+# Detect potential outliers.
+q1 = data["Rental_Price_Rs"].quantile(0.25)
+q3 = data["Rental_Price_Rs"].quantile(0.75)
+iqr = q3 - q1
+lower_limit = q1 - 1.5 * iqr
+upper_limit = q3 + 1.5 * iqr
+outliers = data[
+    (data["Rental_Price_Rs"] < lower_limit)
+    | (data["Rental_Price_Rs"] > upper_limit)
+]
+print("Potential price outliers (IQR):", len(outliers))
+
+# ==================== 4. DESCRIPTIVE STATISTICS ====================
+heading("DESCRIPTIVE STATISTICS")
+print(data[numeric_columns].describe().round(2))
+price = data["Rental_Price_Rs"]
+print("\nMean price: Rs", round(price.mean(), 2))
+print("Median price: Rs", round(price.median(), 2))
+print("Mode price: Rs", price.mode().iloc[0])
+print("Price variance:", round(price.var(), 2))
+print("Price standard deviation:", round(price.std(), 2))
+print("Price skewness:", round(price.skew(), 2))
+print("Distance-price correlation:", round(data["Distance_km"].corr(price), 3))
+
+
+# ==================== 5. EXPLORATORY ANALYSIS ====================
+heading("EXPLORATORY DATA ANALYSIS")
+print("Vehicle type counts:\n", data["Vehicle_Type"].value_counts())
+print("\nDemand level counts:\n", data["Demand_Level"].value_counts())
+print("\nAverage price by vehicle:\n",
+      data.groupby("Vehicle_Type")["Rental_Price_Rs"].mean().round(2))
+print("\nAverage rating by vehicle:\n",
+      data.groupby("Vehicle_Type")["Customer_Rating"].mean().round(2))
+print("\nWeather vs demand:\n", pd.crosstab(data["Weather"], data["Demand_Level"]))
+
+
+# ==================== 6. PROBABILITY ====================
+heading("PROBABILITY ANALYSIS")
+high_demand = data["Demand_Level"] == "High"
+accepted = data["Recommendation_Accepted"] == "Yes"
+print("P(High demand):", round(high_demand.mean(), 4))
+print("P(Car rental):", round((data["Vehicle_Type"] == "Car").mean(), 4))
+print("P(Recommendation accepted):", round(accepted.mean(), 4))
+if high_demand.sum() > 0:
+    conditional = accepted[high_demand].mean()
+    print("P(Accepted | High demand):", round(conditional, 4))
+
+
+# ==================== 7. FEATURE ENGINEERING ====================
+heading("FEATURE ENGINEERING")
+data["Price_per_km"] = data["Rental_Price_Rs"] / data["Distance_km"]
+data["Speed_kmph"] = data["Distance_km"] / (data["Duration_min"] / 60)
+data["Duration_Difference"] = (
+    data["Duration_min"] - data["Expected_Duration_min"]
+)
+data["Peak_Hour"] = data["Booking_Hour"].isin([8, 9, 10, 16, 17, 18]).astype(int)
+print(data[["Price_per_km", "Speed_kmph", "Duration_Difference", "Peak_Hour"]].head())
+
+
+
+# PMF, CDF, expectation and moments.
+vehicle_pmf = data["Vehicle_Type"].value_counts(normalize=True)
+print("\nEmpirical PMF of vehicle type:\n", vehicle_pmf.round(4))
+mu = price.mean()
+sigma = price.std(ddof=1)
+print("E[Price] =", round(mu, 2))
+print("E[Price^2] =", round(np.mean(price ** 2), 2))
+print("Variance =", round(price.var(ddof=1), 2))
+print("Skewness =", round(stats.skew(price, bias=False), 3))
+print("Empirical CDF at median =", round((price <= price.median()).mean(), 4))
+print("Normal PDF at mean =", round(stats.norm.pdf(mu, loc=mu, scale=sigma), 6))
+print("Binomial P(3 acceptances in 5) =", round(stats.binom.pmf(3, 5, accepted.mean()), 4))
+
+# Random vector, covariance and correlation.
+print("\nCovariance matrix (Distance, Price):\n", data[["Distance_km", "Rental_Price_Rs"]].cov().round(3))
+print("Correlation matrix:\n", data[["Distance_km", "Rental_Price_Rs"]].corr().round(3))
+
+# Sampling distribution, CLT and confidence interval.
+rng = np.random.default_rng(42)
+sample_size = min(30, len(price))
+sample_means = np.array([rng.choice(price.to_numpy(), sample_size, replace=True).mean() for _ in range(1000)])
+print("\nMean of bootstrap sample means =", round(sample_means.mean(), 2))
+print("Standard error estimate =", round(sample_means.std(ddof=1), 2))
+se = stats.sem(price)
+tcrit = stats.t.ppf(0.975, len(price) - 1)
+print("95% CI for mean price =", (round(mu - tcrit * se, 2), round(mu + tcrit * se, 2)))
+
+# Approximate Z test. Population SD is unavailable, so sample SD is used as an estimate.
+z = (mu - 200) / (sigma / np.sqrt(len(price)))
+z_p = 2 * (1 - stats.norm.cdf(abs(z)))
+print("Approximate Z test: z =", round(z, 4), "p =", round(z_p, 6), decision(z_p))
+
+# F test for equality of two variances.
+car_f = data.loc[data["Vehicle_Type"] == "Car", "Rental_Price_Rs"]
+scooter_f = data.loc[data["Vehicle_Type"] == "Scooter", "Rental_Price_Rs"]
+if len(car_f) > 1 and len(scooter_f) > 1:
+    f_stat = car_f.var(ddof=1) / scooter_f.var(ddof=1)
+    f_cdf = stats.f.cdf(f_stat, len(car_f)-1, len(scooter_f)-1)
+    f_p = min(1.0, 2 * min(f_cdf, 1-f_cdf))
+    print("F variance test: F =", round(f_stat, 4), "p =", round(f_p, 6), decision(f_p))
+
+# Feature subset selection and PCA dimensionality reduction.
+fe = data[["Distance_km", "Duration_min", "Customer_Rating", "Vehicle_Available_Count",
+           "Fuel_Battery_Level", "Expected_Duration_min", "Booking_Hour", "Peak_Hour"]].copy()
+selector = SelectKBest(f_regression, k=4).fit(fe, data["Rental_Price_Rs"])
+print("Selected features =", fe.columns[selector.get_support()].tolist())
+scaled_fe = StandardScaler().fit_transform(fe)
+pca = PCA(n_components=2).fit(scaled_fe)
+print("PCA explained variance =", np.round(pca.explained_variance_ratio_, 4),
+      "Total =", round(pca.explained_variance_ratio_.sum()*100, 2), "%")
+
+
+# ==================== 8. VISUALIZATIONS ====================
+
+# 1. Bar chart
+plt.figure(figsize=(8, 5))
+sns.countplot(data=data, x="Vehicle_Type", order=data["Vehicle_Type"].value_counts().index, color="steelblue")
+plt.xlabel("Vehicle type")
+plt.ylabel("Number of rentals")
+show_chart("1. Most Popular Vehicle Types")
+
+# 2. Histogram
+plt.figure(figsize=(8, 5))
+sns.histplot(data["Rental_Price_Rs"], bins=15, kde=True, color="steelblue")
+plt.xlabel("Rental price (Rs)")
+show_chart("2. Rental Price Distribution")
+
+# 3. Box plot
+plt.figure(figsize=(8, 5))
+sns.boxplot(data=data, x="Vehicle_Type", y="Rental_Price_Rs", color="steelblue")
+plt.xlabel("Vehicle type")
+plt.ylabel("Rental price (Rs)")
+show_chart("3. Rental Price by Vehicle Type")
+
+# 4. Scatter plot
+plt.figure(figsize=(8, 5))
+sns.scatterplot(data=data, x="Distance_km", y="Rental_Price_Rs", hue="Vehicle_Type")
+plt.xlabel("Distance (km)")
+plt.ylabel("Rental price (Rs)")
+show_chart("4. Distance vs Rental Price")
+
+# 5. Correlation heatmap
+plt.figure(figsize=(9, 6))
+heatmap_columns = [
+    "Distance_km", "Duration_min", "Rental_Price_Rs",
+    "Customer_Rating", "Vehicle_Available_Count", "Expected_Duration_min"
+]
+sns.heatmap(data[heatmap_columns].corr(), annot=True, fmt=".2f", cmap="coolwarm")
+show_chart("5. Correlation Heatmap")
+
+# 6. Line chart
+plt.figure(figsize=(9, 5))
+daily_counts = data.groupby("Rental_Date").size().sort_index()
+plt.plot(daily_counts.index, daily_counts.values, marker="o")
+plt.xlabel("Rental date")
+plt.ylabel("Number of rentals")
+plt.xticks(rotation=45)
+show_chart("6. Daily Rental Trend")
+
+
+# ==================== 9. HYPOTHESIS TESTS ====================
+heading("HYPOTHESIS TESTING (ALPHA = 0.05)")
+
+# One-sample t-test: mean rental price vs Rs 200.
+t_value, p_value = stats.ttest_1samp(data["Rental_Price_Rs"], popmean=200)
+print("\nOne-sample t-test: H0: mean price = Rs 200")
+print("t =", round(t_value, 4), "p =", round(p_value, 6))
+print(decision(p_value))
+
+# Welch independent t-test: car prices vs scooter prices.
+car_prices = data.loc[data["Vehicle_Type"] == "Car", "Rental_Price_Rs"]
+scooter_prices = data.loc[data["Vehicle_Type"] == "Scooter", "Rental_Price_Rs"]
+t_value, p_value = stats.ttest_ind(car_prices, scooter_prices, equal_var=False)
+print("\nIndependent t-test: H0: mean car price = mean scooter price")
+print("t =", round(t_value, 4), "p =", round(p_value, 6))
+print(decision(p_value))
+
+# Chi-square: association between vehicle type and demand.
+contingency = pd.crosstab(data["Vehicle_Type"], data["Demand_Level"])
+chi2, p_value, dof, expected = stats.chi2_contingency(contingency)
+print("\nChi-square: H0: vehicle type and demand are independent")
+print("Chi-square =", round(chi2, 4), "df =", dof, "p =", round(p_value, 6))
+print("Expected frequency cells below 5:", int((expected < 5).sum()))
+print(decision(p_value))
+
+# One-way ANOVA: price across demand levels.
+demand_groups = [
+    group["Rental_Price_Rs"].values
+    for _, group in data.groupby("Demand_Level")
+]
+f_value, p_value = stats.f_oneway(*demand_groups)
+print("\nOne-way ANOVA: H0: mean price is equal across demand levels")
+print("F =", round(f_value, 4), "p =", round(p_value, 6))
+print(decision(p_value))
+
+# Two-way ANOVA (Vehicle Type and Demand Level).
+try:
+    import statsmodels.api as sm
+    from statsmodels.formula.api import ols
+    fit2 = ols("Rental_Price_Rs ~ C(Vehicle_Type) + C(Demand_Level) + C(Vehicle_Type):C(Demand_Level)", data=data).fit()
+    print("\nTwo-way ANOVA:\n", sm.stats.anova_lm(fit2, typ=2).round(4))
+except ImportError:
+    print("Two-way ANOVA skipped: install statsmodels to run it.")
+
+# ==================== 10. LINEAR REGRESSION ====================
+heading("LINEAR REGRESSION: RENTAL PRICE PREDICTION")
+
+features = ["Distance_km", "Vehicle_Type"]
+X = pd.get_dummies(data[features], columns=["Vehicle_Type"], drop_first=True, dtype=int)
+y = data["Rental_Price_Rs"]
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.20, random_state=42
+)
+
+model = LinearRegression()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+
+print("Intercept:", round(model.intercept_, 3))
+print("Coefficients:")
+for name, coefficient in zip(X.columns, model.coef_):
+    print(f"  {name:25s}: {coefficient:9.3f}")
+
+mae = mean_absolute_error(y_test, y_pred)
+rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+r2 = r2_score(y_test, y_pred)
+print("\nMAE :", round(mae, 2))
+print("RMSE:", round(rmse, 2))
+print("R2  :", round(r2, 4))
+
+comparison = pd.DataFrame({
+    "Actual": y_test.to_numpy(),
+    "Predicted": np.round(y_pred, 2)
+})
+print("\nSample Actual vs Predicted Prices:\n", comparison.head(10).to_string(index=False))
+
+# 7. Actual vs predicted chart
+plt.figure(figsize=(8, 5))
+sns.scatterplot(x=y_test, y=y_pred)
+minimum = min(y_test.min(), y_pred.min())
+maximum = max(y_test.max(), y_pred.max())
+plt.plot([minimum, maximum], [minimum, maximum], "r--", label="Perfect prediction")
+plt.xlabel("Actual price (Rs)")
+plt.ylabel("Predicted price (Rs)")
+plt.legend()
+show_chart("7. Actual vs Predicted Rental Prices")
+
+# 8. Residual plot
+residuals = y_test.to_numpy() - y_pred
+plt.figure(figsize=(8, 5))
+sns.scatterplot(x=y_pred, y=residuals)
+plt.axhline(0, color="red", linestyle="--")
+plt.xlabel("Predicted price (Rs)")
+plt.ylabel("Residual: actual - predicted (Rs)")
+show_chart("8. Regression Residuals")
+
+
+# ==================== 11. OPTIONAL PREDICTION ====================
+heading("TRY A RENTAL PRICE PREDICTION")
+answer = input("Would you like to predict a price? (y/n): ").strip().lower()
+if answer == "y":
+    try:
+        distance = float(input("Enter distance in km: "))
+        vehicle = input("Vehicle type (Bike/Scooter/Car/E-Scooter): ").strip()
+        available_types = data["Vehicle_Type"].unique().tolist()
+
+        if distance <= 0:
+            print("Distance must be positive.")
+        elif vehicle not in available_types:
+            print("Choose one of:", ", ".join(available_types))
+        else:
+            new_rental = pd.DataFrame({
+                "Distance_km": [distance],
+                "Vehicle_Type": [vehicle]
+            })
+            # Matching the same dummy columns used during training.
+            new_rental = pd.DataFrame(0, index=[0], columns=X.columns)
+            new_rental.loc[0, "Distance_km"] = distance
+            dummy_name = "Vehicle_Type_" + vehicle
+            if dummy_name in new_rental.columns:
+                new_rental.loc[0, dummy_name] = 1
+            predicted_price = model.predict(new_rental)[0]
+            print(f"Estimated rental price: Rs {predicted_price:.2f}")
+    except ValueError:
+        print("Please enter a valid numerical distance.")
